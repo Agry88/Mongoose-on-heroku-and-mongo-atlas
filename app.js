@@ -25,5 +25,5 @@ const todoRouter = require("./routes/todo");
 app.use("/todo",todoRouter);
 
 ///設定Server的Port
-app.listen(3000 , () => console.log("server started"))
+app.listen(process.env.PORT ||3000 , () => console.log("server started"))
 
