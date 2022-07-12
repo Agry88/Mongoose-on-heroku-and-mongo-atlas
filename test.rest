@@ -1,0 +1,26 @@
+###檢視全部事項
+GET http://localhost:3000/todo
+
+###新增代辦事項
+POST http://localhost:3000/todo
+Content-Type:application/json
+
+{
+    "thing":"好酷的事情3",
+    "isDone":false
+}
+
+###檢視特定事項
+GET http://localhost:3000/todo/62c3d797bf44b33a7cac6403
+
+###
+DELETE  http://localhost:3000/todo/62c3d797bf44b33a7cac6403
+
+###
+PATCH  http://localhost:3000/todo/62c3d8f1018e3fd3363f1ff1
+Content-Type:application/json
+
+{
+    "thing":"好酷的事情2ˇ3",
+    "isDone":true
+}
